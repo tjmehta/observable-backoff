@@ -1,0 +1,45 @@
+{
+  "name": "observable-backoff",
+  "version": "0.0.0",
+  "description": "RxJS observable exponential backoff operator",
+  "main": "index.js",
+  "scripts": {
+    "test": "istanbul cover _mocha ./test && istanbul --text check-coverage --statements 100 --functions 100 --branches 100 --lines 100",
+    "test-watch": "nodemon -x mocha ./test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tjmehta/observable-backoff.git"
+  },
+  "keywords": [
+    "rxjs",
+    "rx",
+    "observable",
+    "exponential",
+    "backoff",
+    "operator",
+    "timeout",
+    "retry",
+    "retrywhen"
+  ],
+  "author": "Tejesh Mehta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tjmehta/observable-backoff/issues"
+  },
+  "homepage": "https://github.com/tjmehta/observable-backoff#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "istanbul": "^0.4.4",
+    "mocha": "^2.5.3",
+    "rxjs": "^5.0.0-beta.10",
+    "sinon": "^1.17.4"
+  },
+  "peerDependencies": {
+    "rxjs": "^5.0.0-beta.10"
+  },
+  "dependencies": {
+    "101": "^1.6.1",
+    "static-observable": "^1.0.0"
+  }
+}
