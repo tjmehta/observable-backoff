@@ -24,7 +24,7 @@ Observable.prototype.backoff = function (opts) {
     maxTimeout: 3000,
     factor: 3,
     retries: 2,
-    onRetry: noop
+    onError: noop
   })
   return this.retryWhen(function (errorObs) {
     return Observable.zip(
