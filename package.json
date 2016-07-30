@@ -1,6 +1,6 @@
 {
   "name": "observable-backoff",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "RxJS observable exponential backoff operator",
   "main": "index.js",
   "scripts": {
