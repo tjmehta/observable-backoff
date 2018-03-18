@@ -5,6 +5,15 @@ Object {
   "onComplete": [MockFunction],
   "onError": [MockFunction],
   "onNext": [MockFunction],
+  "optsOnError": [MockFunction] {
+    "calls": Array [
+      Array [
+        0,
+        false,
+        1,
+      ],
+    ],
+  },
   "subscribe": [MockFunction] {
     "calls": Array [
       Array [
@@ -20,6 +29,20 @@ Object {
   "onComplete": [MockFunction],
   "onError": [MockFunction],
   "onNext": [MockFunction],
+  "optsOnError": [MockFunction] {
+    "calls": Array [
+      Array [
+        0,
+        false,
+        1,
+      ],
+      Array [
+        1,
+        false,
+        2,
+      ],
+    ],
+  },
   "subscribe": [MockFunction] {
     "calls": Array [
       Array [
@@ -44,6 +67,25 @@ Object {
     ],
   },
   "onNext": [MockFunction],
+  "optsOnError": [MockFunction] {
+    "calls": Array [
+      Array [
+        0,
+        false,
+        1,
+      ],
+      Array [
+        1,
+        false,
+        2,
+      ],
+      Array [
+        2,
+        true,
+        3,
+      ],
+    ],
+  },
   "subscribe": [MockFunction] {
     "calls": Array [
       Array [
@@ -71,6 +113,25 @@ Object {
     ],
   },
   "onNext": [MockFunction],
+  "optsOnError": [MockFunction] {
+    "calls": Array [
+      Array [
+        0,
+        false,
+        1,
+      ],
+      Array [
+        1,
+        false,
+        2,
+      ],
+      Array [
+        2,
+        true,
+        3,
+      ],
+    ],
+  },
   "subscribe": [MockFunction] {
     "calls": Array [
       Array [

@@ -32,7 +32,7 @@ Observable.prototype.backoff = function (opts) {
     ).mergeMap(function (zip) {
       var i = zip[0]
       var err = zip[1]
-      opts.onError(err, i === opts.retries, i)
+      opts.onError(err, i === opts.retries, i + 1)
       if (i === opts.retries) {
         return StaticObservable.error(err)
       }
