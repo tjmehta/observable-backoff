@@ -4,8 +4,8 @@
   "description": "RxJS observable exponential backoff operator",
   "main": "index.js",
   "scripts": {
-    "test": "istanbul cover _mocha ./test && istanbul --text check-coverage --statements 100 --functions 100 --branches 100 --lines 100",
-    "test-watch": "nodemon -x mocha ./test"
+    "test": "jest --coverage",
+    "test-watch": "jest --coverage --watch"
   },
   "repository": {
     "type": "git",
@@ -29,14 +29,12 @@
   },
   "homepage": "https://github.com/tjmehta/observable-backoff#readme",
   "devDependencies": {
-    "chai": "^3.5.0",
-    "istanbul": "^0.4.4",
-    "mocha": "^3.2.0",
-    "rxjs": "^5.0.0-beta.10",
-    "sinon": "^1.17.4"
+    "jest": "^22.4.2",
+    "rxjs": "^5.0.0",
+    "timeout-then": "^1.1.0"
   },
   "peerDependencies": {
-    "rxjs": "^5.0.0-beta.10"
+    "rxjs": "^5.0.0"
   },
   "dependencies": {
     "101": "^1.6.1",

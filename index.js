@@ -12,13 +12,12 @@ require('rxjs/add/operator/delay')
 require('rxjs/add/operator/mergeMap')
 require('rxjs/add/operator/retryWhen')
 
-var debug = console.log.bind(console)
-
 /**
  * exponential backoff operator
  * @return {[type]} [description]
  */
 Observable.prototype.backoff = function (opts) {
+  opts = opts || {}
   defaults(opts, {
     minTimeout: 1000,
     maxTimeout: 3000,
