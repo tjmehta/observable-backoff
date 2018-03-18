@@ -1,0 +1,163 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`observable-backoff errors should exponentially backoff and retry 1`] = `
+Object {
+  "onComplete": [MockFunction],
+  "onError": [MockFunction],
+  "onNext": [MockFunction],
+  "subscribe": [MockFunction] {
+    "calls": Array [
+      Array [
+        "RetryWhenSubscriber",
+      ],
+    ],
+  },
+}
+`;
+
+exports[`observable-backoff errors should exponentially backoff and retry 2`] = `
+Object {
+  "onComplete": [MockFunction],
+  "onError": [MockFunction],
+  "onNext": [MockFunction],
+  "subscribe": [MockFunction] {
+    "calls": Array [
+      Array [
+        "RetryWhenSubscriber",
+      ],
+      Array [
+        "RetryWhenSubscriber",
+      ],
+    ],
+  },
+}
+`;
+
+exports[`observable-backoff errors should exponentially backoff and retry 3`] = `
+Object {
+  "onComplete": [MockFunction],
+  "onError": [MockFunction] {
+    "calls": Array [
+      Array [
+        2,
+      ],
+    ],
+  },
+  "onNext": [MockFunction],
+  "subscribe": [MockFunction] {
+    "calls": Array [
+      Array [
+        "RetryWhenSubscriber",
+      ],
+      Array [
+        "RetryWhenSubscriber",
+      ],
+      Array [
+        "RetryWhenSubscriber",
+      ],
+    ],
+  },
+}
+`;
+
+exports[`observable-backoff errors should exponentially backoff and retry 4`] = `
+Object {
+  "onComplete": [MockFunction],
+  "onError": [MockFunction] {
+    "calls": Array [
+      Array [
+        2,
+      ],
+    ],
+  },
+  "onNext": [MockFunction],
+  "subscribe": [MockFunction] {
+    "calls": Array [
+      Array [
+        "RetryWhenSubscriber",
+      ],
+      Array [
+        "RetryWhenSubscriber",
+      ],
+      Array [
+        "RetryWhenSubscriber",
+      ],
+    ],
+  },
+}
+`;
+
+exports[`observable-backoff no errors should work like a normal observable 1`] = `
+Object {
+  "onComplete": [MockFunction],
+  "onError": [MockFunction],
+  "onNext": [MockFunction] {
+    "calls": Array [
+      Array [
+        1,
+      ],
+    ],
+  },
+}
+`;
+
+exports[`observable-backoff no errors should work like a normal observable 2`] = `
+Object {
+  "onComplete": [MockFunction],
+  "onError": [MockFunction],
+  "onNext": [MockFunction] {
+    "calls": Array [
+      Array [
+        1,
+      ],
+      Array [
+        2,
+      ],
+    ],
+  },
+}
+`;
+
+exports[`observable-backoff no errors should work like a normal observable 3`] = `
+Object {
+  "onComplete": [MockFunction],
+  "onError": [MockFunction],
+  "onNext": [MockFunction] {
+    "calls": Array [
+      Array [
+        1,
+      ],
+      Array [
+        2,
+      ],
+      Array [
+        3,
+      ],
+    ],
+  },
+}
+`;
+
+exports[`observable-backoff no errors should work like a normal observable 4`] = `
+Object {
+  "onComplete": [MockFunction] {
+    "calls": Array [
+      Array [],
+    ],
+  },
+  "onError": [MockFunction],
+  "onNext": [MockFunction] {
+    "calls": Array [
+      Array [
+        1,
+      ],
+      Array [
+        2,
+      ],
+      Array [
+        3,
+      ],
+    ],
+  },
+}
+`;
