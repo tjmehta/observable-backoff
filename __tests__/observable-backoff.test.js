@@ -38,7 +38,8 @@ describe('observable-backoff', () => {
         onNext: jest.fn(),
         onError: jest.fn(),
         onComplete: jest.fn(),
-        subscribe: jest.fn()
+        subscribe: jest.fn(),
+        optsOnError: jest.fn()
       }
       let failCount = 0
       const subscribe = (observer) => {
@@ -53,7 +54,8 @@ describe('observable-backoff', () => {
         minTimeout: 5,
         maxTimeout: 10 * Math.pow(2, 2),
         factor: 2,
-        retries: 2
+        retries: 2,
+        onError: mocks.optsOnError
       }
       observable
         .backoff(opts)
