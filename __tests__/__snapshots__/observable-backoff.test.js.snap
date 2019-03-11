@@ -148,6 +148,154 @@ Object {
 }
 `;
 
+exports[`observable-backoff errors should exponentially backoff and stop if onError returns true 1`] = `
+Object {
+  "onComplete": [MockFunction],
+  "onError": [MockFunction],
+  "onNext": [MockFunction],
+  "optsOnError": [MockFunction] {
+    "calls": Array [
+      Array [
+        0,
+        false,
+        1,
+      ],
+    ],
+  },
+  "subscribe": [MockFunction] {
+    "calls": Array [
+      Array [
+        "RetryWhenSubscriber",
+      ],
+    ],
+  },
+}
+`;
+
+exports[`observable-backoff errors should exponentially backoff and stop if onError returns true 2`] = `
+Object {
+  "onComplete": [MockFunction],
+  "onError": [MockFunction],
+  "onNext": [MockFunction],
+  "optsOnError": [MockFunction] {
+    "calls": Array [
+      Array [
+        0,
+        false,
+        1,
+      ],
+      Array [
+        1,
+        false,
+        2,
+      ],
+    ],
+  },
+  "subscribe": [MockFunction] {
+    "calls": Array [
+      Array [
+        "RetryWhenSubscriber",
+      ],
+      Array [
+        "RetryWhenSubscriber",
+      ],
+    ],
+  },
+}
+`;
+
+exports[`observable-backoff errors should exponentially backoff and stop if onError returns true 3`] = `
+Object {
+  "onComplete": [MockFunction],
+  "onError": [MockFunction] {
+    "calls": Array [
+      Array [
+        2,
+      ],
+    ],
+  },
+  "onNext": [MockFunction],
+  "optsOnError": [MockFunction] {
+    "calls": Array [
+      Array [
+        0,
+        false,
+        1,
+      ],
+      Array [
+        1,
+        false,
+        2,
+      ],
+      Array [
+        2,
+        true,
+        3,
+      ],
+    ],
+  },
+  "subscribe": [MockFunction] {
+    "calls": Array [
+      Array [
+        "RetryWhenSubscriber",
+      ],
+      Array [
+        "RetryWhenSubscriber",
+      ],
+      Array [
+        "RetryWhenSubscriber",
+      ],
+    ],
+  },
+}
+`;
+
+exports[`observable-backoff errors should exponentially backoff and stop if onError returns true 4`] = `
+Object {
+  "onComplete": [MockFunction],
+  "onError": [MockFunction] {
+    "calls": Array [
+      Array [
+        2,
+      ],
+    ],
+  },
+  "onNext": [MockFunction],
+  "optsOnError": [MockFunction] {
+    "calls": Array [
+      Array [
+        0,
+        false,
+        1,
+      ],
+      Array [
+        1,
+        false,
+        2,
+      ],
+      Array [
+        2,
+        true,
+        3,
+      ],
+    ],
+  },
+  "subscribe": [MockFunction] {
+    "calls": Array [
+      Array [
+        "RetryWhenSubscriber",
+      ],
+      Array [
+        "RetryWhenSubscriber",
+      ],
+      Array [
+        "RetryWhenSubscriber",
+      ],
+    ],
+  },
+}
+`;
+
 exports[`observable-backoff no errors should work like a normal observable 1`] = `
 Object {
   "onComplete": [MockFunction],
