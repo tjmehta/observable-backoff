@@ -38,6 +38,6 @@
   },
   "dependencies": {
     "101": "^1.6.1",
-    "static-observable": "^1.0.0"
+    "static-observable": "^1.0.2"
   }
 }
