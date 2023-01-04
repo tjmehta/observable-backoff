@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/tjmehta/observable-backoff#readme",
   "devDependencies": {
-    "jest": "^22.4.2",
+    "jest": "^29.3.1",
     "rxjs": "^5.0.0",
     "timeout-then": "^1.1.0"
   },
